@@ -1,4 +1,5 @@
 # 🚌 Automated Fare Collection (AFC) System
+
 A full-stack, production-ready bus ticketing system with RFID-based tap-in/tap-out, GPS-based fare calculation, and smart wallet management.
 
 ---
@@ -197,7 +198,7 @@ cd afc-frontend && npm run dev
 
 ### User
 ```json
-{ "name": "Ankit Singh", "email": "ankit@example.com",
+{ "name": "Arjun Sharma", "email": "arjun@example.com",
   "rfidUID": "A1B2C3D4", "walletBalance": 250.50,
   "role": "user", "isActive": true }
 ```

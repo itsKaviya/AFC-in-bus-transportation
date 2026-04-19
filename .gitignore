@@ -1,0 +1,22 @@
+# system files
+.DS_Store
+
+# env files
+.env
+
+# logs
+*.log
+logs/
+
+# dependencies
+node_modules/
+
+# build folders
+dist/
+build/
+
+# next.js
+.next/
+
+# misc
+.cache/

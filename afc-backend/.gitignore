@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# next build
+.next/
+
+# production
+out/
+
+# env
+.env.local
+.env
+
+# logs
+*.log
+
+# OS
+.DS_Store
+
+# misc
+.cache/
