@@ -39,29 +39,29 @@ export default function SignupPage() {
   const set = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));
 
   return (
-    <div className="min-h-screen bg-surface flex items-center justify-center px-4 py-12">
+    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-surface">
       <div className="w-full max-w-lg animate-fade-in">
 
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="mb-10 text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="text-3xl">🚌</span>
             <span className="text-2xl font-bold font-display gradient-text">AFC System</span>
           </div>
           <h2 className="text-3xl font-bold font-display text-slate-100">Create your account</h2>
-          <p className="text-slate-400 mt-2">Register your RFID card and start riding</p>
+          <p className="mt-2 text-slate-400">Register your RFID card and start riding</p>
         </div>
 
         {/* Card */}
-        <div className="bg-surface-card border border-surface-border rounded-2xl p-8">
+        <div className="p-8 border bg-surface-card border-surface-border rounded-2xl">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-2">
-                <Input label="Full name" placeholder="Arjun Sharma" value={form.name}
+                <Input label="Full name" placeholder="Ankit Singh" value={form.name}
                   onChange={set('name')} error={errors.name} icon="👤" />
               </div>
               <div className="col-span-2">
-                <Input label="Email address" type="email" placeholder="arjun@example.com"
+                <Input label="Email address" type="email" placeholder="ankit@example.com"
                   value={form.email} onChange={set('email')} error={errors.email} icon="✉" />
               </div>
               <Input label="Password" type="password" placeholder="Min. 6 characters"
@@ -75,17 +75,17 @@ export default function SignupPage() {
             </Button>
           </form>
 
-          <p className="text-center text-slate-400 text-sm mt-6">
+          <p className="mt-6 text-sm text-center text-slate-400">
             Already have an account?{' '}
-            <Link href="/login" className="text-brand-400 hover:text-brand-300 font-medium transition-colors">
+            <Link href="/login" className="font-medium transition-colors text-brand-400 hover:text-brand-300">
               Sign in
             </Link>
           </p>
         </div>
 
         {/* RFID hint */}
-        <div className="mt-4 p-4 bg-amber-500/5 border border-amber-500/20 rounded-xl flex gap-3">
-          <span className="text-amber-400 text-lg flex-shrink-0">📡</span>
+        <div className="flex gap-3 p-4 mt-4 border bg-amber-500/5 border-amber-500/20 rounded-xl">
+          <span className="flex-shrink-0 text-lg text-amber-400">📡</span>
           <p className="text-xs text-amber-300/80">
             Your RFID UID is printed on your transit card. It's a unique 8-16 character code. 
             In a real deployment this would be scanned automatically at registration kiosks.

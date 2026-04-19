@@ -197,7 +197,7 @@ cd afc-frontend && npm run dev
 
 ### User
 ```json
-{ "name": "Arjun Sharma", "email": "arjun@example.com",
+{ "name": "Ankit Singh", "email": "ankit@example.com",
   "rfidUID": "A1B2C3D4", "walletBalance": 250.50,
   "role": "user", "isActive": true }
 ```
